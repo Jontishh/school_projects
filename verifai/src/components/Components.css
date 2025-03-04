@@ -1,0 +1,272 @@
+:root{
+  background-color: #f8f8f8;
+}
+
+.listButton {
+  border-radius: 0;
+  /* border-bottom: solid #009696; */
+  /* border-top: solid #009696; */
+  border-bottom: transparent;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  font-size: 1em; /* Decrease font size */
+  padding: 1em 5vw; /* Adjust padding */
+  width: 100%;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  color: #3f3f3f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.transparentBackground {
+  background-color: transparent;
+  color: #3f3f3f;
+}
+.whiteBackground {
+  background-color: white;
+  color: darkturquoise;
+}
+
+.school-name {
+  float: left; /* Align school name to the left */
+}
+
+.distance {
+  float: right; /* Align distance to the right */
+}
+
+.scroll-view {
+  width: 100%;
+  height: 60vh; /* Set a fixed height for the scrollable area */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Disable horisontal scrolling, if entire name not visable -> use 'auto' instead */
+  border-top: 1px solid #ccc; /* Add a border for visibility */
+  border-bottom: 1px solid #ccc; /* Add a border for visibility */
+  border-left: transparent;
+  border-right:transparent;
+}
+
+.list-container {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack ListButtons vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 10px; /* Add padding for spacing */
+  margin-bottom: 10px; /* Add margin between ListButtons */
+  width: 95%
+}
+/* 
+.colorOverlay{
+  background-color: #5EFC8D;
+  opacity:1;
+  width: max-content;
+  margin: 7px auto;
+  border-radius: 10px;
+} */
+/* .red{
+  background-color: #C8375A
+}
+.yellow{
+  background-color: #FFB800;
+
+}
+.green{
+  background-color: #5EFC8D;
+} */
+
+
+.verifyBtn {
+  width: 8.6vh;
+  height: 8.6vh;
+  max-width: 57px;
+  max-height: 57px;
+  border-radius: 50%; /* Make buttons circular */
+  margin: 10px;
+  background-color: #28A4A4;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+/* .verifyBtn img {
+  width: auto; 
+  height: 3.5vh;
+} */
+
+.verifyBtnSmall{
+  width:47px;
+  height: 47px;
+  border-radius: 100%;
+  margin:10px;
+  background-color:#28A4A4;
+}
+
+.xbutton.red{
+  background-color: #C8375A;
+  ;
+}
+.unsureButton.yellow{
+  background-color: #FFB800;
+  ;
+}
+
+.imageContainer {
+  width: 100%; /* Ensure image takes up full width */
+}
+
+.cardContent {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+
+.cardContainer{
+  display: flex;
+  flex-direction: column;
+  background-color: #d7ecec;
+  height: 85%;
+  width: 90%;
+  max-width: 348px;
+  margin: 15% auto 15%;
+  border-radius: 10px;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  padding: 5px 5px 5px;
+  scroll-margin-top: 3vh;
+  position: relative;
+}
+
+.cardContainer.default{
+  animation: linear green-on-scroll;
+  animation-timeline: view();
+}
+.cardContainer.red{
+  border-color: #C8375A;
+  box-shadow: 0 0 20px #C8375A;
+}
+.cardContainer.yellow{
+  /* border-color: #FFB800; */
+  box-shadow: 0 0 20px #FFB800;
+}
+.cardContainer.green{
+  /* border-color: #5EFC8D; */
+  box-shadow: 0 0 20px #38b000;
+}
+
+
+.disease{
+  opacity: 1;
+  height: 100%;
+  max-height: 50vh;
+  width: 100%;
+  border-radius: 10px;
+  /* object-fit: contain; */
+}
+/* .disease.default{
+  opacity:1;
+  animation: linear green-on-scroll;
+  animation-timeline: view();
+  object-fit:cover;
+} */
+
+
+#cardButtons {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px; /* Adjust margin as needed */
+  padding: 0 0; /* Add padding to create space around buttons */
+}
+
+@media only screen and (min-height: 600px) {
+  #cardButtons {
+    margin-bottom: 5px; 
+  }
+}
+
+@media only screen and (min-height: 720px) {
+  #cardButtons {
+    margin-bottom: 20px; 
+  }
+}
+
+
+    
+  
+  
+@media only screen and (max-width: 419px) {
+  /* Reduce button width to fit on smaller screens */
+  #disease {
+    width: 100%;
+  }
+  #colorOverlay{
+    width: 90%;
+  }
+  #cardContainer{
+    width:90%
+  }
+}
+
+@keyframes green-on-scroll {
+  exit 0%  {
+    /* opacity: 1; */
+    box-shadow: 0 0 20px rgba(55,176,0,0)
+    
+  }
+  exit 90%  {
+    /* opacity: 0.3; */
+    box-shadow: 0 0 20px rgba(56,176,0,1)
+  }
+}
+
+.verification-status {
+  color: #000000;
+  font-size: 3vh;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Ubuntu';
+  margin:0;
+}
+
+
+.object-type {
+  color: #000000;
+  font-size: 3vh;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Ubuntu';
+  margin:0;
+}
+
+
+.nextScanCard{
+  background-color: white;
+  height: 90%;
+  width: 90%;
+  max-width: 348px;
+  margin: 10% auto 10%;
+  border-radius: 10px;
+  scroll-snap-align: center;
+  scroll-snap-stop:always;
+  padding: 5px 5px 5px;
+  display: flex;
+
+
+  
+}
+
+#nextScanText{
+  margin:auto;
+
+
+}
+

@@ -1,0 +1,1 @@
+global.Favorites = [1, 3];

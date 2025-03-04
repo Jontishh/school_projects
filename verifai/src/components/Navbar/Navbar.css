@@ -1,0 +1,80 @@
+
+.Navbar {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 31px 12px;
+    background-color: #ffffff;
+    z-index: 9999; /* Ensure the loading screen appears on top of other content */
+    
+  }
+  
+  .NavbarHeader {
+    display: flex;
+    align-items: center;
+  }
+  
+  .NavbarHeaderItem {
+    margin-right: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: #000000;
+  }
+
+  .text{
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+  }
+  
+  .logo{
+    width: 31px;
+    height: 26px;
+  }
+  
+  .menu {
+    width: 25px;
+    height: 25px;
+  
+  }
+
+  .sidebar {
+    position: fixed; /* Use fixed positioning */
+    background-color: #ffffff;
+    background-image: url('../../assets/menubackground.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    top: 0; /* Align to the top of the viewport */
+    right: 0; /* Align to the right side of the viewport */
+    height: 100vh; /* Set the height to cover the entire viewport */
+    width: 345px; /* Set the width of the sidebar */
+    overflow: hidden;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 10; /* Ensure the sidebar appears above other content */
+    /* overflow-y: auto; Allow vertical scrolling if content exceeds sidebar height */
+}
+
+  .sidebar.open {
+    transform: translateX(0);
+}
+
+.close-icon {
+  color: #000000;
+  float: right;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Start with transparent background */
+  z-index: 5;
+  transition: background-color ease-in-out 1s; /* Transition for smooth effect */
+}
+
+

@@ -1,0 +1,42 @@
+
+.bottomDiv{
+    display:flex;
+    flex-direction: column;
+    
+    margin-bottom: 20px;
+    
+}
+.errorWrapper {   
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex:1
+   
+    
+}
+.errorMessage{
+    text-align: center;
+    padding-left: 30px; 
+    padding-right: 35px;
+    padding-top: 15px;
+    max-width: 342px;
+    margin: 0 auto 0;
+    
+}
+
+#dropDown{
+    max-width: 342px;
+  
+    height: 44px;
+    margin: 5% auto 5%;
+}
+@media only screen and (max-width: 600px) {
+    /* Reduce button width to fit on smaller screens */
+    #dropDown {
+      width: 80%;
+    }
+    .welcomeText{
+        width:80%;
+    }
+  }
+

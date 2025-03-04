@@ -1,0 +1,36 @@
+.help-popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.help-popup-inner {
+    position: relative;
+    padding: 0px;
+    width: 90%;
+    height: 91%;
+    max-width: 500px;
+    max-height: 800px;
+    background-color: #FFFFFF;
+    overflow-y: auto;
+}
+
+.help-gif-container {
+    /* Apply styles to restrict the size of the container */
+    max-width: 100%; /* Adjust as needed */
+    max-height: 100%; /* Adjust as needed */
+    overflow: hidden; /* Hide overflow if content exceeds container dimensions */
+}
+
+.help-gif {
+    /* Apply styles to the GIF */
+    max-width: 100%; /* Ensure the GIF does not exceed the container's size */
+    height: auto; /* Maintain aspect ratio */
+}

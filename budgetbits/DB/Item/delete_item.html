@@ -1,0 +1,14 @@
+{% extends 'Item/temp_basic.html' %}
+
+{% block content %}
+{{msg}}
+<form  action='delete_item_output' method=POST>
+    {% csrf_token %}
+id :<input type=text name=id><br>
+<input type=submit value=Submit>
+</form>
+<form action='add' method=POST>
+    {% csrf_token %}
+    <input type=submit value="To add page">
+</form>
+{% endblock %}

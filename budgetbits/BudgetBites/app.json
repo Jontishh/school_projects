@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "scheme": "com.budgetbites",
+    "name": "BudgetBites",
+    "slug": "BudgetBites",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.budgetbites",
+      "simulator": true
+    },
+    "android": {
+      "package": "com.budgetbites",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ce935d54-8372-418a-955d-054a899cc550"
+      }
+    }
+  }
+}
