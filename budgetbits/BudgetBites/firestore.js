@@ -2,7 +2,7 @@ import { getFirestore } from "firebase/firestore";
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyC478SdCw7v3l_j23FSpk3tmUFSs2sEHVs",
+    apiKey: "-",
     authDomain: "budgetbites-userdb.firebaseapp.com",
     projectId: "budgetbites-userdb",
     storageBucket: "budgetbites-userdb.appspot.com",
